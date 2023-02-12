@@ -13,5 +13,5 @@ wget https://raw.githubusercontent.com/alvarodcr/plex-rpi/master/docker-compose.
 docker-compose up -d
 docker stop plex_transmission_1
 cd /transmission/
-jq '.rpc-whitelist-enabled |= false' config.json > config.json.tmp && mv config.json.tmp config.json
+jq '.rpc-whitelist-enabled |= false' config.json
 docker start plex_transmission_1
