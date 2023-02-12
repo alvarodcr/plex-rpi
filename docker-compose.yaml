@@ -9,7 +9,7 @@ services:
     stdin_open: true
     tty: true
     environment:
-      - TZ=America/Argentina/Mendoza
+      - TZ=Europe/Madrid
     ports:
       - 139:139
       - 445:445
@@ -27,7 +27,7 @@ services:
     #  - 32400:32400
     #  - 33400:33400
     environment:
-      - TZ=America/Argentina/Mendoza
+      - TZ=Europe/Madrid
     volumes:
       - ${STORAGE}/Plex Media Server:/root/Library/Application Support/Plex Media Server
       - ${MEDIA}:/media
